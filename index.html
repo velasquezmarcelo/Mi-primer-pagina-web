@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- hay dos etiquetas principales una head y una body -->
+<!-- en head colocamos informacion importante de la pagina pero que no se va a ver, no es parte visual -->
+<!-- en body es lo contrario, todo lo que vemos, la parte visual -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi primer pagina web</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Seymour+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">LOGO</a>
+            <ul class="nav">
+                <li class="nav-item active">
+                  <a class="nav-link" href="../">Inicio </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#mapa">Ubicacion</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./acercade.html">Acerca de</a>
+                </li>
+              </ul>
+        </nav>
+        <div class="cover d-flex justify-content-center align-items-center flex-column" >
+            <h1>Heladeria Geris</h1>
+
+            <p> El mejor helado artesanal de la ciudad</p>
+
+            <button class="btn btn-primary"> Conoce mas </button>
+        </div>
+    </header>
+
+    <section>
+      <div class="container mt-5">
+        <div class="row justify-content-center">
+
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-2">
+            <div class="card">
+              <div title="bandeja con distintos sabores de helados" class="cover cover-small" style="background-image: url(./imagenes/lama-roscu-Wpg3Qm0zaGk-unsplash.jpg);"></div>
+              <div class="card-body">
+                <h5 class="card-title">Nuestros sabores</h5>
+                <p class="card-text">Tenemos una gran variedad y cantidad de sabores, te invitamos a conocerlos.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+         </div>
+        <!-- el atributo alt sirve para los asistente tecnologicos, lee una descripcion de la imagen -->
+        
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-2">
+            <div class="card">
+              <div title="paleta de crema" class="cover cover-small" style="background-image: url(./imagenes/pablo-merchan-montes-MXovqM130UI-unsplash.jpg);"></div>
+              <div class="card-body">
+                <h5 class="card-title">Paletas a la crema</h5>
+                <p class="card-text">Aqui podras ver toda la variedad de sabores de paletas a la crema que tenemos disponible.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+        
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-2">
+            <div class="card">
+              <div title="paleda de agua" class="cover cover-small" style="background-image: url(./imagenes/svitlana-waxEvli6Drg-unsplash.jpg);"></div>
+              <div class="card-body">
+                <h5 class="card-title">Paletas al agua</h5>
+                <p class="card-text">Aqui podras ver toda la variedad de sabores de paletas al agua que tenemos disponible.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+        
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-2">  
+            <div class="card">
+              <div title="postres helados" class="cover cover-small" style="background-image: url(./imagenes/emile-mbunzama-cLpdEA23Z44-unsplash.jpg);"></div>
+              <div class="card-body">
+                <h5 class="card-title">Postres helados</h5>
+                <p class="card-text">Otra manera de comer helado, aqui podras ver todos nuestros postres a base de helado disponibles</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+    <section>
+      <div class="container mt-5 mb-5">
+        <div class="row">
+          <div class="col-12 col-sm-6 col-lg-5">
+            <img src="./imagenes/undraw_ice_cream_s-2-rh.svg" alt="una persona ilustrada con un cono de helado en la mano"/>
+          </div>
+          <div class="col-12 col-sm-6">
+            <h3>Comer helado alegra tus dias!</h3>
+            <p>Suscribite para mantenerte al dia sobre nustras novedades</p>
+            <a href="#">Ir al mapa</a>
+          </div>
+        </div>
+        <form action="">
+          <label for="email"> Correo electronico</label>
+            <div class="d-flex">
+              <div class="flex-fill mr-2">
+                <input type="email" id="email" class="form-control"/>
+              </div>
+              <button type="submit" class="btn-primary">Enviar</button>
+          </div>
+
+        </form>
+
+      </div>
+    </section>
+    <section>
+      <div class="container mt-5 mb-5" id="mapa">
+        <h4>Nos encontramos aqui</h4>
+        <P>Av. Keiner 891, Libertador Gral San Martín, Jujuy</P>
+        <div class="responsive-iframe">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14598.458918043712!2d-64.79818472224406!3d-23.832295423405053!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941ac1e96c391f75%3A0xcc4dfe393f591cd4!2sHospital%20Dr.%20Oscar%20Orias%20Ledesma!5e0!3m2!1ses-419!2sar!4v1672496936711!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </section>
+</body>
+</html>
